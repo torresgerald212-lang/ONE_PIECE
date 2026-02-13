@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Heather - Pirate Queen</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+  background-size: 400% 400%;
+  animation: fondoAnimado 15s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+@keyframes fondoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.contenedor {
+  margin-top: 50px;
+  animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.wanted {
+  background: #f4e4bc;
+  color: #3b2f1b;
+  display: inline-block;
+  padding: 20px;
+  border: 6px solid #5c3a21;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.bounty {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #ffcc00;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="contenedor">
+  <h1>🏴‍☠️ EMPERATRIZ DEL NUEVO MUNDO</h1>
+
+  <div class="wanted">
+    <h2>WANTED</h2>
+    <p>DEAD OR ALIVE</p>
+    
+    <!-- CAMBIA AQUI POR TU IMAGEN -->
+    <img src="WANTED.jpg" alt="Heather">
+
+    <div class="bounty">$1,500,000,000</div>
+  </div>
+
+  <br>
+  <button onclick="alert('El Gobierno Mundial te teme 🔥')">
+    Ver recompensa
+  </button>
+</div>
+
+</body>
+</html>
